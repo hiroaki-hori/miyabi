@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>日本料理　雅（みやび）</title>
+  <meta name="description" content="岐阜県にある日本料理専門店「雅」の公式サイトです。">
+  <meta name="keywords" content="岐阜県,和食,日本料理,雅,日本料理雅">
+    <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/miyabi.css">
+  <link rel="stylesheet" href="owlcarousel/assets/owl.carousel.min.css">
+        <link rel="stylesheet" href="owlcarousel/assets/owl.theme.default.min.css">
+        <!-- jQuery -->
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <!-- Owl Carousel JS -->
+        <script src="owlcarousel/owl.carousel.min.js"></script>
+         <!-- Owl Carouselを動作させるために追加 -->
+        <script src="test-carousel.js"></script>
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="image/favicon.png">
+</head>
+    <!--ヘッド終わり-->
+<body>
+    <header id="header">
+        <div class="container">
+            <div class="row">
+                <div class="twelve columns">
+                    <div class="owl-carousel owl-theme">
+                     <img class="u-max-full-width" src="image/top/header-1.jpg" alt="">
+                     <img class="u-max-full-width" src="image/top/header-2.jpg" alt="">
+                     <img class="u-max-full-width" src="image/top/header-3.jpg" alt="">
+                     <img class="u-max-full-width" src="image/top/header-4.jpg" alt="">
+                     <img class="u-max-full-width" src="image/top/header-5.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--ヘッダー終わり-->
+    <main id=top>
+        <div class="container">
+            <div class="row">
+                <div class="four columns">
+                  <div id="logo">
+                      <div class="sumi"><img class="u-max-full-width" src="image/top/sumi.png" alt=""></div>
+                      <div class="wasi"><img class="u-max-full-width" src="image/top/wasi_logo.png" alt=""></div>
+                      <div class="main_logo"><img class="u-max-full-width" src="image/top/miyabi_logo.png" alt=""></div>
+                      <div class="sub_logo"><img class="u-max-full-width" src="image/top/sub_logo.png" alt=""></div>
+                    <div class="navi">
+                        <ul>
+                            <li><a href="index.html"><img class="u-max-full-width" src="image/top/toppage.png" alt="トップページ"></a></li>
+                            <li><a href="about.html"><img class="u-max-full-width" src="image/top/miyabi.png" alt="雅について"></a></li>
+                            <li><a href="menu.html"><img class="u-max-full-width" src="image/top/menu.png" alt="お品書き"></a></li>
+                            <li><a href="shop.html"><img class="u-max-full-width" src="image/top/tennai.png" alt="店内の様子"></a></li>
+                            <li><a href="form.html"><img class="u-max-full-width" src="image/top/form.png" alt="お問い合わせ"></a></li>
+                        </ul>
+                    </div>
+                  </div>
+                </div>
+                    <!--　サイドバー終わり-->
+                <div class="eight columns">
+                    <div id="top_contents">
+                        <div class="aisatu">
+                            <img class="u-max-full-width pc" src="image/top/aisatu.png" alt="">
+                            <img class="u-max-full-width sp" src="image/top_sp/aisatu.png" alt="">
+                            <p>素材の持つ繊細な味を尊重して手を加えすぎず、されど心を込めて上品な料理をつくること。<br>
+                               出会えたお客様とのご縁を大切にしてまいります。​</p>
+                        </div>
+                            <div class="contents_li">
+                                  <a href="about.html"><img class="u-max-full-width" src="image/top/c_1.png" alt="雅について"></a>
+                                <h4>雅について</h4>
+                                <p>手を加えすぎず、されど繊細に素材ひとつひとつの味を引き立たせるのが雅の料理でございます｡</p>
+                            </div>
+                            <div class="contents_li">
+                                  <a href="menu.html"><img class="u-max-full-width" src="image/top/c_2.png" alt="お品書き"></a>
+                                <h4>お品書き</h4>
+                                <p>旬の幸を使ったコースを多数ご用意させていただいております。是非ゆったりとお楽しみください。</p>
+                            </div>
+                            <div class="contents_li">
+                                  <a href="shop.html"><img class="u-max-full-width" src="image/top/c_3.png" alt="店内の様子"></a>
+                                <h4>店内の様子</h4>
+                                <p>個室、御座敷、テーブル席と用途に合わせてご利用いただけます。雅こだわりの落ち着いた空間で素敵なお時間をお過ごしください。</p>
+                            </div>
+                    </div>
+                </div>
+                <!--メインコンテンツ終了-->
+                <div class="page_top"><a href="#logo"><p>ページトップへ</p></a></div>
+            </div>
+        </div>
+        <script>
+
+$(document).ready(function() {
+  var page_top = $('.page_top');
+       page_top.click(function () {
+           $('body, html').animate({ scrollTop: 0 }, 500);
+              return false;
+   });
+});
+</script>
+
+    </main>
+    <!--メイン終了-->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="twelve columns">
+                    <p>日本料理 <span>雅</span></p>
+                    <small> 岐阜県岐阜市○○町○○1−1−1　TEL 0000−00−0000　営業時間 [昼]11：00～14:00、[夜]17：30～22:00<br>Copyright© Miyabbi All Rights Reserved</small>
+                </div>
+            </div>
+        </div>
+    </footer>
+       <!--フッター終了-->
+</body>

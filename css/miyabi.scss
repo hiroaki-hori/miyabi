@@ -1,0 +1,550 @@
+@charset "utf-8";
+@mixin fontsize($size: 24) {
+
+font-size: $size + px;
+
+font-size: ($size / 10) * 1rem;
+
+}
+$ja_font : "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", メイリオ, Verdana, "ＭＳ Ｐゴシック", sans-serif;
+$sub : #515747;
+html {
+
+font-size: 62.5%;
+}
+
+body {
+  font-family: $ja_font;
+  background-image: url("../image/top/haikei.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/*全体部分終了*/
+
+#logo{
+    margin: 70px 0 150px 0;
+    position: relative;
+    width: 230px;
+    height: 450px;
+    .sumi{
+    position: absolute;
+    top: -30px;
+    left: -37px;
+    margin: 0 -60px;
+     }
+    .wasi{
+    opacity: 0.8;
+    position: absolute;
+    top: 0;
+     }
+    .main_logo{
+        position: absolute;
+        top: 145px;
+        left: 45px;
+    }
+    .sub_logo{
+        position:  absolute;
+        top: 45px;
+        left: 160px;
+    }
+    .navi{
+        ul{
+           position: absolute;
+           top: 272px;
+           left: 22px;
+        
+        li{
+            list-style: none;
+            margin: 0 10px;
+            float: right;
+           }
+    }
+ }
+}
+#logo::after{
+    content: '';
+    display: block;
+     clear: both;
+}
+
+/*サイドバー終了*/
+#top_contents,#about_contents,#menu_contents,#shop_contents,#form_contents,#form1_contents{
+    margin: 70px 0 100px 0;}
+    #top_contents{
+        .aisatu{
+            padding-top: 20px;
+            p{
+                margin-top: 10px;
+            }
+        }
+        .contents_li{
+            width: 31.3%;
+            margin: 0 5px;
+            float: left;
+            h4{
+                @include fontsize(16);
+                width: 150px;
+                margin: 5px 0 10px 10px;
+            }
+            p{
+                @include fontsize(12);
+                width: 160px;
+                margin-left: 10px;
+            }
+        }
+}
+    .aisatu{
+        img{display: block;}
+        p{
+            @include fontsize(14);
+            margin: 20px 0 20px 10px;
+        }
+    }
+    .pan{
+    p{
+    margin-bottom: 20px;}
+}
+/*メイン終了*/
+.page_top{
+    text-align: center;
+    @include fontsize(14);
+    margin-bottom: 80px;
+    p{
+        color: #000;
+    }
+    a{
+        text-decoration: none;
+    }
+}
+footer{
+    background-image: url("../image/top/haikei_sumi.png");
+    background-repeat: no-repeat;
+  background-position: 50% 0%;
+  padding: 45px 0 0 0;
+    text-align: center;
+    color: white;
+    p{
+        @include fontsize(14);
+        margin-bottom: 10px;
+        span{
+              @include fontsize(18);
+        }
+    }
+    small{
+                @include fontsize(12);
+                margin-bottom: 30px;
+                display: block;
+                line-height: 25px;
+    }
+}
+/*フッター終了*/
+/*トップページ終了*/
+#about_contents{
+    .aisatu{
+        .susi{
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            border-radius: 50%;
+            float: left;
+            margin: 15px 0 0 75px;
+            width: 20%;
+        }
+        p{
+            float: left;
+            width: 50%;
+            margin: 30px 0 20px 30px;
+        }
+    }
+    .aisatu::after{
+     content: '';
+    display: block;
+     clear: both;
+    }
+    .gaiyou{
+        margin: 0 30px;
+        table{
+            th{
+                border: 1px solid #000;
+                @include fontsize(16);
+                padding: 10px 20px;
+                text-align: center;
+            }
+            td{
+                border: 1px solid #000;
+                @include fontsize(16);
+                padding: 10px 20px;
+            }
+        }
+    }
+    .access{
+        margin: 0 30px;
+        .map{
+            margin-bottom: 20px;
+        }
+    }
+    
+    
+    .yoyaku{
+        margin: 0 30px;
+        .yoyaku_yext{
+            @include fontsize(16);
+            
+        }
+        .btn{
+            display: inline-block;
+            width: 35%;
+            margin: 0 20px;
+            a{
+                text-decoration: none;
+            }
+            p{
+                padding: 15px 0;
+                border: 1px solid #000;
+                color: #000;
+                text-align: center;
+                background-image: url("../image/top/wasi_logo.png");
+            }
+        }
+    }
+}
+/*アバウト終了*/
+#menu_contents{
+    .food_p{
+        
+        margin: 0 30px;
+        img{
+            border: 1px solid #000;
+        }
+    }
+    .menu{
+        margin: 0 30px;
+       .menu_box{
+           border: 1px solid #000;
+           position: relative;
+           width: 100%;
+           height: 450px;
+           background: white;
+           margin-top: 35px;
+           #lunch{
+               border: 1px solid #000;
+               -webkit-border-radius: 4px 4px 0 0;
+               -moz-border-radius: 4px 4px 0 0;
+               border-radius:  4px 4px 0 0;
+               position: absolute;
+               top: -30px;
+               left: 50px;
+               p{
+                   text-align: center;
+                   padding: 10px 30px;
+                   @include fontsize(20);
+                   margin: 0;
+                   background-image: url("../image/top/wasi_logo.png");
+               }
+           }
+            #dinner{
+               border: 1px solid #000;
+               -webkit-border-radius: 4px 4px 0 0;
+               -moz-border-radius: 4px 4px 0 0;
+               border-radius:  4px 4px 0 0;
+               position: absolute;
+               top: -30px;
+               left: 152px;
+               p{
+                   text-align: center;
+                   padding: 10px 30px;
+                   @include fontsize(20);
+                   margin: 0;
+                   background-image: url("../image/top/wasi_logo.png");
+               }
+           }
+           .lunch{
+               position: absolute;
+               top: 60px;
+               left:  90px;
+  
+           }
+           .dinner{
+               display: none;
+               position: absolute;
+               top: 60px;
+               left:  90px;
+               .nabe{
+                   @include fontsize(14);
+                   margin-left: 80px;
+               }
+           }
+            li{
+                list-style: none;
+                   @include fontsize(18);
+                   ul{
+                       margin: 0 40px 0 80px;}
+                       p{
+                           @include fontsize(8);
+                           margin: 0 40px 0 80px;
+                           span{
+                               color: #000;
+                               @include fontsize(14);
+                           }
+                       }
+               span{
+                   color: $sub;
+               }
+          }
+       }
+    }
+}
+/*メニュー終了*/
+.gallery_box{
+    margin: 0 30px;
+            display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    img{
+        display: block;
+        width: 23%;
+        margin: 0 5px 10px 5px;
+    }
+}
+/*ギャラリー終了*/
+.form_box{
+    background: white;
+    border: 1px solid #000;
+    margin: 20px 0 20px 30px;
+    form{
+        p{
+            margin: 30px 50px 10px 50px;
+            @include fontsize(16);
+            text-align: left;
+            }
+            input{
+                border: 1px solid #000;
+                -webkit-border-radius: 0;
+                -moz-border-radius: 0;
+                border-radius: 0;
+                margin: 0;
+                height: 30px;
+            }
+            textarea{
+                 border: 1px solid #000;
+                -webkit-border-radius: 0;
+                -moz-border-radius: 0;
+                border-radius: 0;
+            }
+            .sousin{
+                width: 200px;
+                height: 40px;
+                margin-left: auto;
+                margin-right: auto;
+                display: block;
+            }
+        }
+        .li{
+            margin: 0 50px 30px 50px;
+             @include fontsize(12);
+             color: #000;
+        }
+        a{
+            text-decoration: none;
+        }
+    }
+    /*フォーム終了*/
+    #form1_contents{
+        h4{
+         @include fontsize(22);
+         font-weight: bold;
+         margin-bottom: 15px;
+        }
+        p{
+        @include fontsize(14);
+        }
+        .privacy{
+            margin: 30px;
+        }
+    }
+      /*フォーム1終了*/
+/*メディアクエリ*/
+@media (min-width: 550px){
+    #logo{
+        .navi{
+            li:hover,action{
+                opacity: 0.5;
+            }
+        }
+    }
+        .aisatu{
+            .sp{
+                display: none;
+            }
+        }
+    #top .page_top{
+        display: none;
+    }
+    .page_top,.btn{
+        p:hover,action{
+            opacity: 0.5;
+        }
+    }
+    #lunch,#dinner:hover{
+        cursor: pointer;
+    }
+    .sousin:hover,action{
+        background-color: darken(#fff, 10%);
+    }
+    .li:hover,action{
+        color: lighten(#000, 10%);
+    }
+    .spsp{
+        display: none;
+    }
+}
+@media (max-width: 549px){
+    #header{
+        display: none;
+    }
+    #logo{
+        margin: 20px 20px 20px 25px;
+    }
+    .aisatu{
+            .pc{
+            display: none;
+            }
+            p{
+                margin-bottom: 0;
+            }
+        }
+    .pcpc{
+            display: none;
+        }
+               
+    /*トップページ部分*/
+    #top_contents{
+        .contents_li{
+            float: none;
+            width: 100%;
+            margin: 10px 0 0 0;
+            img{
+                width: 100%;
+            }
+            h4{
+                width: 100%;
+                margin: 0;
+            }
+            p{
+                width: 100%;
+                margin: 5px 0;
+            }
+            
+        }
+    }
+    /*アバウト部分*/
+    #about_contents{
+        .aisatu{
+            .susi{
+                float: none;
+                width: 50%;
+                margin: 15px 70px;
+            }
+            p{
+                float: none;
+                width: 100%;
+                margin: 0;
+            }
+        }
+            .gaiyou,.yoyaku,.access,{
+            margin: 0;
+        }
+        .yoyaku{
+            .btn{
+                margin: 0 40px;
+                width: 70%;
+            }
+        }
+    }
+    /*メニュー部分*/
+#menu_contents{
+    .food_p{
+        margin: 20px 0  0 0;
+    }
+    .menu{
+        margin: 0;
+    .menu_box{
+        height: 450px;
+        #lunch{
+            left: 38px;
+        }
+        #dinner{
+            left: 140px;
+        }
+        .lunch{
+            top: 50px;
+            left: 15px;
+        }
+        li{
+            @include fontsize(16);
+            ul{
+                margin: 0 10px 0 30px;
+            }
+            p{
+                margin: 0 10px 0 30px
+            }
+        }
+        .dinner{
+            top: 50px;
+            left: 15px;
+            .nabe{
+                margin: 0 10px 0 30px;
+            }
+        }
+    }
+    
+  }
+ }
+ #shop_contents{
+     .gallery_box{
+         margin: 20px 0 0 0;
+         img{
+             width: 31%;
+             margin: 0 2px 5px 2px;
+         }
+     }
+ }
+ /*ギャラリー終了*/
+ #form_contents{
+     .form_box{
+         margin: 20px 0 0 0;
+         form{
+             p{
+                 margin: 20px 10px 10px 30px;
+                   @include fontsize(14);
+             }
+             input{
+                 width: 90%;
+             }
+             textarea{
+                 width: 90%;
+             }
+             .sousin{
+                 width: 60%;
+             }
+         }
+         .li{
+             margin: 0 0 20px 0;
+             text-align: center;
+         }
+     }
+ }
+   /*フォーム終了*/
+   #form1_contents{
+       .pan{
+           p{
+            @include fontsize(12);
+           }
+       }
+       .privacy{
+           margin: 20px 0 0 0;
+       }
+       h4{
+            @include fontsize(18);
+       }
+   }
+}

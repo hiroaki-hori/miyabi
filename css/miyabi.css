@@ -1,0 +1,428 @@
+@charset "UTF-8";
+html {
+  font-size: 62.5%; }
+
+body {
+  font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", メイリオ, Verdana, "ＭＳ Ｐゴシック", sans-serif;
+  background-image: url("../image/top/haikei.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+/*全体部分終了*/
+#logo {
+  margin: 70px 0 150px 0;
+  position: relative;
+  width: 230px;
+  height: 450px; }
+  #logo .sumi {
+    position: absolute;
+    top: -30px;
+    left: -37px;
+    margin: 0 -60px; }
+  #logo .wasi {
+    opacity: 0.8;
+    position: absolute;
+    top: 0; }
+  #logo .main_logo {
+    position: absolute;
+    top: 145px;
+    left: 45px; }
+  #logo .sub_logo {
+    position: absolute;
+    top: 45px;
+    left: 160px; }
+  #logo .navi ul {
+    position: absolute;
+    top: 272px;
+    left: 22px; }
+    #logo .navi ul li {
+      list-style: none;
+      margin: 0 10px;
+      float: right; }
+
+#logo::after {
+  content: '';
+  display: block;
+  clear: both; }
+
+/*サイドバー終了*/
+#top_contents, #about_contents, #menu_contents, #shop_contents, #form_contents, #form1_contents {
+  margin: 70px 0 100px 0; }
+
+#top_contents .aisatu {
+  padding-top: 20px; }
+  #top_contents .aisatu p {
+    margin-top: 10px; }
+#top_contents .contents_li {
+  width: 31.3%;
+  margin: 0 5px;
+  float: left; }
+  #top_contents .contents_li h4 {
+    font-size: 16px;
+    font-size: 1.6rem;
+    width: 150px;
+    margin: 5px 0 10px 10px; }
+  #top_contents .contents_li p {
+    font-size: 12px;
+    font-size: 1.2rem;
+    width: 160px;
+    margin-left: 10px; }
+
+.aisatu img {
+  display: block; }
+.aisatu p {
+  font-size: 14px;
+  font-size: 1.4rem;
+  margin: 20px 0 20px 10px; }
+
+.pan p {
+  margin-bottom: 20px; }
+
+/*メイン終了*/
+.page_top {
+  text-align: center;
+  font-size: 14px;
+  font-size: 1.4rem;
+  margin-bottom: 80px; }
+  .page_top p {
+    color: #000; }
+  .page_top a {
+    text-decoration: none; }
+
+footer {
+  background-image: url("../image/top/haikei_sumi.png");
+  background-repeat: no-repeat;
+  background-position: 50% 0%;
+  padding: 45px 0 0 0;
+  text-align: center;
+  color: white; }
+  footer p {
+    font-size: 14px;
+    font-size: 1.4rem;
+    margin-bottom: 10px; }
+    footer p span {
+      font-size: 18px;
+      font-size: 1.8rem; }
+  footer small {
+    font-size: 12px;
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    display: block;
+    line-height: 25px; }
+
+/*フッター終了*/
+/*トップページ終了*/
+#about_contents .aisatu .susi {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  float: left;
+  margin: 15px 0 0 75px;
+  width: 20%; }
+#about_contents .aisatu p {
+  float: left;
+  width: 50%;
+  margin: 30px 0 20px 30px; }
+#about_contents .aisatu::after {
+  content: '';
+  display: block;
+  clear: both; }
+#about_contents .gaiyou {
+  margin: 0 30px; }
+  #about_contents .gaiyou table th {
+    border: 1px solid #000;
+    font-size: 16px;
+    font-size: 1.6rem;
+    padding: 10px 20px;
+    text-align: center; }
+  #about_contents .gaiyou table td {
+    border: 1px solid #000;
+    font-size: 16px;
+    font-size: 1.6rem;
+    padding: 10px 20px; }
+#about_contents .access {
+  margin: 0 30px; }
+  #about_contents .access .map {
+    margin-bottom: 20px; }
+#about_contents .yoyaku {
+  margin: 0 30px; }
+  #about_contents .yoyaku .yoyaku_yext {
+    font-size: 16px;
+    font-size: 1.6rem; }
+  #about_contents .yoyaku .btn {
+    display: inline-block;
+    width: 35%;
+    margin: 0 20px; }
+    #about_contents .yoyaku .btn a {
+      text-decoration: none; }
+    #about_contents .yoyaku .btn p {
+      padding: 15px 0;
+      border: 1px solid #000;
+      color: #000;
+      text-align: center;
+      background-image: url("../image/top/wasi_logo.png"); }
+
+/*アバウト終了*/
+#menu_contents .food_p {
+  margin: 0 30px; }
+  #menu_contents .food_p img {
+    border: 1px solid #000; }
+#menu_contents .menu {
+  margin: 0 30px; }
+  #menu_contents .menu .menu_box {
+    border: 1px solid #000;
+    position: relative;
+    width: 100%;
+    height: 450px;
+    background: white;
+    margin-top: 35px; }
+    #menu_contents .menu .menu_box #lunch {
+      border: 1px solid #000;
+      -webkit-border-radius: 4px 4px 0 0;
+      -moz-border-radius: 4px 4px 0 0;
+      border-radius: 4px 4px 0 0;
+      position: absolute;
+      top: -30px;
+      left: 50px; }
+      #menu_contents .menu .menu_box #lunch p {
+        text-align: center;
+        padding: 10px 30px;
+        font-size: 20px;
+        font-size: 2rem;
+        margin: 0;
+        background-image: url("../image/top/wasi_logo.png"); }
+    #menu_contents .menu .menu_box #dinner {
+      border: 1px solid #000;
+      -webkit-border-radius: 4px 4px 0 0;
+      -moz-border-radius: 4px 4px 0 0;
+      border-radius: 4px 4px 0 0;
+      position: absolute;
+      top: -30px;
+      left: 152px; }
+      #menu_contents .menu .menu_box #dinner p {
+        text-align: center;
+        padding: 10px 30px;
+        font-size: 20px;
+        font-size: 2rem;
+        margin: 0;
+        background-image: url("../image/top/wasi_logo.png"); }
+    #menu_contents .menu .menu_box .lunch {
+      position: absolute;
+      top: 60px;
+      left: 90px; }
+    #menu_contents .menu .menu_box .dinner {
+      display: none;
+      position: absolute;
+      top: 60px;
+      left: 90px; }
+      #menu_contents .menu .menu_box .dinner .nabe {
+        font-size: 14px;
+        font-size: 1.4rem;
+        margin-left: 80px; }
+    #menu_contents .menu .menu_box li {
+      list-style: none;
+      font-size: 18px;
+      font-size: 1.8rem; }
+      #menu_contents .menu .menu_box li ul {
+        margin: 0 40px 0 80px; }
+      #menu_contents .menu .menu_box li p {
+        font-size: 8px;
+        font-size: 0.8rem;
+        margin: 0 40px 0 80px; }
+        #menu_contents .menu .menu_box li p span {
+          color: #000;
+          font-size: 14px;
+          font-size: 1.4rem; }
+      #menu_contents .menu .menu_box li span {
+        color: #515747; }
+
+/*メニュー終了*/
+.gallery_box {
+  margin: 0 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+  .gallery_box img {
+    display: block;
+    width: 23%;
+    margin: 0 5px 10px 5px; }
+
+/*ギャラリー終了*/
+.form_box {
+  background: white;
+  border: 1px solid #000;
+  margin: 20px 0 20px 30px; }
+  .form_box form p {
+    margin: 30px 50px 10px 50px;
+    font-size: 16px;
+    font-size: 1.6rem;
+    text-align: left; }
+  .form_box form input {
+    border: 1px solid #000;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    margin: 0;
+    height: 30px; }
+  .form_box form textarea {
+    border: 1px solid #000;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0; }
+  .form_box form .sousin {
+    width: 200px;
+    height: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block; }
+  .form_box .li {
+    margin: 0 50px 30px 50px;
+    font-size: 12px;
+    font-size: 1.2rem;
+    color: #000; }
+  .form_box a {
+    text-decoration: none; }
+
+/*フォーム終了*/
+#form1_contents h4 {
+  font-size: 22px;
+  font-size: 2.2rem;
+  font-weight: bold;
+  margin-bottom: 15px; }
+#form1_contents p {
+  font-size: 14px;
+  font-size: 1.4rem; }
+#form1_contents .privacy {
+  margin: 30px; }
+
+/*フォーム1終了*/
+/*メディアクエリ*/
+@media (min-width: 550px) {
+  #logo .navi li:hover, #logo .navi action {
+    opacity: 0.5; }
+
+  .aisatu .sp {
+    display: none; }
+
+  #top .page_top {
+    display: none; }
+
+  .page_top p:hover, .page_top action, .btn p:hover, .btn action {
+    opacity: 0.5; }
+
+  #lunch, #dinner:hover {
+    cursor: pointer; }
+
+  .sousin:hover, action {
+    background-color: #e6e6e6; }
+
+  .li:hover, action {
+    color: #1a1a1a; }
+
+  .spsp {
+    display: none; } }
+@media (max-width: 549px) {
+  #header {
+    display: none; }
+
+  #logo {
+    margin: 20px 20px 20px 25px; }
+
+  .aisatu .pc {
+    display: none; }
+  .aisatu p {
+    margin-bottom: 0; }
+
+  .pcpc {
+    display: none; }
+
+  /*トップページ部分*/
+  #top_contents .contents_li {
+    float: none;
+    width: 100%;
+    margin: 10px 0 0 0; }
+    #top_contents .contents_li img {
+      width: 100%; }
+    #top_contents .contents_li h4 {
+      width: 100%;
+      margin: 0; }
+    #top_contents .contents_li p {
+      width: 100%;
+      margin: 5px 0; }
+
+  /*アバウト部分*/
+  #about_contents .aisatu .susi {
+    float: none;
+    width: 50%;
+    margin: 15px 70px; }
+  #about_contents .aisatu p {
+    float: none;
+    width: 100%;
+    margin: 0; }
+  #about_contents .gaiyou, #about_contents .yoyaku, #about_contents .access {
+    margin: 0; }
+  #about_contents .yoyaku .btn {
+    margin: 0 40px;
+    width: 70%; }
+
+  /*メニュー部分*/
+  #menu_contents .food_p {
+    margin: 20px 0  0 0; }
+  #menu_contents .menu {
+    margin: 0; }
+    #menu_contents .menu .menu_box {
+      height: 450px; }
+      #menu_contents .menu .menu_box #lunch {
+        left: 38px; }
+      #menu_contents .menu .menu_box #dinner {
+        left: 140px; }
+      #menu_contents .menu .menu_box .lunch {
+        top: 50px;
+        left: 15px; }
+      #menu_contents .menu .menu_box li {
+        font-size: 16px;
+        font-size: 1.6rem; }
+        #menu_contents .menu .menu_box li ul {
+          margin: 0 10px 0 30px; }
+        #menu_contents .menu .menu_box li p {
+          margin: 0 10px 0 30px; }
+      #menu_contents .menu .menu_box .dinner {
+        top: 50px;
+        left: 15px; }
+        #menu_contents .menu .menu_box .dinner .nabe {
+          margin: 0 10px 0 30px; }
+
+  #shop_contents .gallery_box {
+    margin: 20px 0 0 0; }
+    #shop_contents .gallery_box img {
+      width: 31%;
+      margin: 0 2px 5px 2px; }
+
+  /*ギャラリー終了*/
+  #form_contents .form_box {
+    margin: 20px 0 0 0; }
+    #form_contents .form_box form p {
+      margin: 20px 10px 10px 30px;
+      font-size: 14px;
+      font-size: 1.4rem; }
+    #form_contents .form_box form input {
+      width: 90%; }
+    #form_contents .form_box form textarea {
+      width: 90%; }
+    #form_contents .form_box form .sousin {
+      width: 60%; }
+    #form_contents .form_box .li {
+      margin: 0 0 20px 0;
+      text-align: center; }
+
+  /*フォーム終了*/
+  #form1_contents .pan p {
+    font-size: 12px;
+    font-size: 1.2rem; }
+  #form1_contents .privacy {
+    margin: 20px 0 0 0; }
+  #form1_contents h4 {
+    font-size: 18px;
+    font-size: 1.8rem; } }
+
+/*# sourceMappingURL=miyabi.css.map */

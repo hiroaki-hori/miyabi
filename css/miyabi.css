@@ -117,18 +117,18 @@ footer {
   -moz-border-radius: 50%;
   border-radius: 50%;
   float: left;
-  margin: 15px 0 0 75px;
+  margin: 25px 0 30px 75px;
   width: 20%; }
 #about_contents .aisatu p {
   float: left;
   width: 50%;
-  margin: 30px 0 20px 30px; }
+  margin: 43px 0 20px 20px; }
 #about_contents .aisatu::after {
   content: '';
   display: block;
   clear: both; }
 #about_contents .gaiyou {
-  margin: 0 30px; }
+  margin: 0 0 0 30px; }
   #about_contents .gaiyou table th {
     border: 1px solid #000;
     font-size: 16px;
@@ -139,13 +139,13 @@ footer {
     border: 1px solid #000;
     font-size: 16px;
     font-size: 1.6rem;
-    padding: 10px 20px; }
+    padding: 10px 0  10px 18px; }
 #about_contents .access {
-  margin: 0 30px; }
+  margin: 0 0 0 30px; }
   #about_contents .access .map {
     margin-bottom: 20px; }
 #about_contents .yoyaku {
-  margin: 0 30px; }
+  margin: 0 0 0 30px; }
   #about_contents .yoyaku .yoyaku_yext {
     font-size: 16px;
     font-size: 1.6rem; }
@@ -164,18 +164,18 @@ footer {
 
 /*アバウト終了*/
 #menu_contents .food_p {
-  margin: 0 30px; }
+  margin: 10px 30px; }
   #menu_contents .food_p img {
     border: 1px solid #000; }
 #menu_contents .menu {
-  margin: 0 30px; }
+  margin: 10px 30px 0 30px; }
   #menu_contents .menu .menu_box {
     border: 1px solid #000;
     position: relative;
     width: 100%;
     height: 450px;
     background: white;
-    margin-top: 35px; }
+    margin-top: 50px; }
     #menu_contents .menu .menu_box #lunch {
       border: 1px solid #000;
       -webkit-border-radius: 4px 4px 0 0;
@@ -242,10 +242,27 @@ footer {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between; }
+  .gallery_box a {
+    width: 30%; }
   .gallery_box img {
-    display: block;
-    width: 23%;
-    margin: 0 5px 10px 5px; }
+    margin: 0 0 15px 0; }
+
+#lage_back {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100vh; }
+  #lage_back #lage_img {
+    width: 80%;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    position: fixed;
+    top: 25%;
+    left: 25%; }
 
 /*ギャラリー終了*/
 .form_box {
@@ -319,6 +336,9 @@ footer {
   .li:hover, action {
     color: #1a1a1a; }
 
+  .gallery_box a:hover {
+    opacity: 0.8; }
+
   .spsp {
     display: none; } }
 @media (max-width: 549px) {
@@ -337,24 +357,30 @@ footer {
     display: none; }
 
   /*トップページ部分*/
+  #top_contents .aisatu p {
+    margin: 10px 0 -10px 0; }
   #top_contents .contents_li {
     float: none;
     width: 100%;
-    margin: 10px 0 0 0; }
+    margin: 30px 0 0 0; }
     #top_contents .contents_li img {
       width: 100%; }
     #top_contents .contents_li h4 {
       width: 100%;
-      margin: 0; }
+      margin: 5px 0 0 0;
+      font-size: 20px;
+      font-size: 2rem; }
     #top_contents .contents_li p {
       width: 100%;
-      margin: 5px 0; }
+      margin: 5px 0;
+      font-size: 14px;
+      font-size: 1.4rem; }
 
   /*アバウト部分*/
   #about_contents .aisatu .susi {
     float: none;
     width: 50%;
-    margin: 15px 70px; }
+    margin: 25px 70px; }
   #about_contents .aisatu p {
     float: none;
     width: 100%;
@@ -368,6 +394,8 @@ footer {
   /*メニュー部分*/
   #menu_contents .food_p {
     margin: 20px 0  0 0; }
+  #menu_contents .aisatu p {
+    margin: 20px 0; }
   #menu_contents .menu {
     margin: 0; }
     #menu_contents .menu .menu_box {
@@ -392,13 +420,18 @@ footer {
         #menu_contents .menu .menu_box .dinner .nabe {
           margin: 0 10px 0 30px; }
 
+  /*ギャラリー部分*/
   #shop_contents .gallery_box {
-    margin: 20px 0 0 0; }
-    #shop_contents .gallery_box img {
-      width: 31%;
-      margin: 0 2px 5px 2px; }
+    margin: 30px 0 0 0; }
+    #shop_contents .gallery_box a {
+      width: 47%; }
+      #shop_contents .gallery_box a img {
+        margin: 0 0 10px 0; }
+  #shop_contents #lage_back #lage_img {
+    left: 10%;
+    top: 35%; }
 
-  /*ギャラリー終了*/
+  /*フォーム部分「*/
   #form_contents .form_box {
     margin: 20px 0 0 0; }
     #form_contents .form_box form p {
@@ -415,7 +448,7 @@ footer {
       margin: 0 0 20px 0;
       text-align: center; }
 
-  /*フォーム終了*/
+  /*フォーム1部分*/
   #form1_contents .pan p {
     font-size: 12px;
     font-size: 1.2rem; }

@@ -67,19 +67,21 @@
                             <p>個室、御座敷、テーブル席と用途に合わせてご利用いただけます。空間で素敵なお時間をお過ごしください。</p>
                         </div>
                         <div class="gallery_box">
-                            <img class="u-max-full-width" src="image/gallery/g_1.jpg" alt="">
-                            <img class="u-max-full-width" src="image/gallery/g_2.jpg" alt="">
-                            <img class="u-max-full-width" src="image/gallery/g_3.jpg" alt="">
-                            <img class="u-max-full-width" src="image/gallery/g_4.jpg" alt="">
-                            <img class="u-max-full-width" src="image/gallery/g_5.jpg" alt="">
-                            <img class="u-max-full-width" src="image/gallery/g_6.jpg" alt="">
-                            <img class="u-max-full-width" src="image/gallery/g_7.jpg" alt="">
-                            <img class="u-max-full-width" src="image/gallery/g_8.jpg" alt="">
-                            <img class="u-max-full-width" src="image/gallery/g_9.jpg" alt="">
-                            <img class="u-max-full-width" src="image/gallery/g_10.jpg" alt="">
-                            <img class="u-max-full-width" src="image/gallery/g_11.jpg" alt="">
-                            <img class="u-max-full-width" src="image/gallery/g_12.jpg" alt="">
-                            
+                            <a href=""><img class="u-max-full-width" src="image/gallery/g_1.jpg" alt=""></a>
+                            <a href=""><img class="u-max-full-width" src="image/gallery/g_2.jpg" alt=""></a>
+                            <a href=""><img class="u-max-full-width" src="image/gallery/g_3.jpg" alt=""></a>
+                            <a href=""><img class="u-max-full-width" src="image/gallery/g_4.jpg" alt=""></a>
+                            <a href=""><img class="u-max-full-width" src="image/gallery/g_5.jpg" alt=""></a>
+                            <a href=""><img class="u-max-full-width" src="image/gallery/g_6.jpg" alt=""></a>
+                            <a href=""><img class="u-max-full-width" src="image/gallery/g_7.jpg" alt=""></a>
+                            <a href=""><img class="u-max-full-width" src="image/gallery/g_8.jpg" alt=""></a>
+                            <a href=""><img class="u-max-full-width" src="image/gallery/g_9.jpg" alt=""></a>
+                            <a href=""><img class="u-max-full-width" src="image/gallery/g_10.jpg" alt=""></a>
+                            <a href=""><img class="u-max-full-width" src="image/gallery/g_11.jpg" alt=""></a>
+                            <a href=""><img class="u-max-full-width" src="image/gallery/g_12.jpg" alt=""></a>
+                        </div>
+                        <div id="lage_back">
+                            <div id="lage_img"><img class="u-max-full-width" src="" alt=""></div>
                         </div>
                     </div>
                 </div>
@@ -94,6 +96,24 @@ $(document).ready(function() {
            $('body, html').animate({ scrollTop: 0 }, 500);
               return false;
    });
+});
+</script>
+<script>
+$(document).ready(function(){
+    $('.gallery_box a').click(function(){
+        var imgSrc = $(this).children().attr('src');
+        $('#lage_img').children().attr('src', imgSrc);
+        $('#lage_back').fadeIn();
+        $('body,html').css('overflow-y', 'hidden');
+        return false
+    });
+    $('#lage_back').click(function(){
+        $('#lage_back').fadeOut();
+        $('body,html').css('overflow-y', 'visible');
+        return false
+    });
+    
+
 });
 </script>
 

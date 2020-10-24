@@ -31,20 +31,38 @@
     <!--ヘッド終わり-->
 <body>
     <header id="header">
-        <div class="g-navi"></div>
-        <div class="container">
-            <div class="row">
-                <div class="twelve columns">
+        <div class="global">
+        <div class="g-navi u-max-full-width">
+            <img class="u-max-full-width gsub" src="image/top/g-navi-sub.png" alt="">
+            <img class="u-max-full-width glogo" src="image/top/g-nabi-logo.png" alt="">
+            <img class="gbtn" src="image/top/btn.png" alt="" width="50" height="50">
+        </div>
+        <div class="slide">
+            <ul>
+                <a href="index.html"><li>トップページ</li></a>
+                <a href="about.html"><li>雅について</li></a>
+                <a href="menu.html"><li>お品書き</li></a>
+                <a href="shop.html"><li>店内の様子</li></a>
+                <a href="form.html"><li>お問い合わせ</li></a>
+            </ul>
+        </div>
+        </div>
                     <div class="owl-carousel owl-theme">
                      <img class="u-max-full-width" src="image/top/header-1.jpg" alt="">
-                     <img class="u-max-full-width" src="image/top/header-2.jpg" alt="">
-                     <img class="u-max-full-width" src="image/top/header-3.jpg" alt="">
-                     <img class="u-max-full-width" src="image/top/header-4.jpg" alt="">
-                     <img class="u-max-full-width" src="image/top/header-5.jpg" alt="">
-                    </div>
-                </div>
-            </div>
-        </div>
+                     <img class="u-max-full-width" src="image/top/newheader-2.jpg" alt="">
+                     <img class="u-max-full-width" src="image/top/newheader-3.jpg" alt="">
+                     <img class="u-max-full-width" src="image/top/newheader-4.jpg" alt="">
+                     <img class="u-max-full-width" src="image/top/newheader-5.jpg" alt="">
+                     </div>
+        <script>
+ $(document).ready(function(){
+
+      $('.gbtn').click(function () {
+        $('.slide').slideToggle();
+      });
+
+    });
+        </script>
     </header>
     <!--ヘッダー終わり-->
     <main id=top>

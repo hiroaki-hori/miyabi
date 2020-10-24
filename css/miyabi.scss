@@ -19,7 +19,73 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
+.owl-stage-outer{
+    height: 600px;
+}
 /*全体部分終了*/
+#header{
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    .global{
+        background-color: rgba(0,0,0,0.7);
+        z-index: 1001;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+    .g-navi{
+        .gsub{
+            margin: 10px 20px;
+            display: block;
+            float: left;
+            margin: 10px 1% 10px 2%;
+        }
+        .glogo{
+            margin: 10px 20px;
+            display: block;
+            float: left;
+            margin: 15px 1%;
+            
+        }
+        .gbtn{
+            display: block;
+            float: right;
+            margin: 1%;
+        }
+    }
+    .slide{
+        background-color: rgba(0,0,0,0.8);
+        width: 20%;
+        height: auto;
+        position: absolute;
+        top: 75%;
+        left: 77%;
+        display: none;
+        ul{
+            margin: 0;
+            border: 1px solid #fff;
+            a{
+                text-decoration: none;
+                li{
+                    list-style: none;
+                    border-bottom: 1px solid #fff;
+                    text-align: center;
+                    padding: 5px;
+                    margin: 0;
+                    color: #fff;
+                }
+            }
+        }
+    }
+    }
+    .global::after{
+        content: '';
+    display: block;
+     clear: both;
+    }
+    
+}
 
 #logo{
     margin: 70px 0 150px 0;
@@ -420,6 +486,12 @@ footer{
     }
     .spsp{
         display: none;
+    }
+    .gbtn:hover{
+        opacity: 0.8;
+    }
+    .slide li:hover,action{
+        opacity: 0.8;
     }
 }
 @media (max-width: 549px){
